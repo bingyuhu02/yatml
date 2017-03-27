@@ -46,7 +46,9 @@ tf.global_variables_initializer().run()
 # direct TensorFlow to train the graph off that point.
 for i in range(10000):
     # We can just shove all the points into TF all at once!
-    sess.run(train_step, feed_dict={x_in: x, y_act: y})
+    # TODO: Change this to batch train
+    xp, yp = x[i % num_pts], y[i % num_pts]
+    sess.run(train_step, feed_dict={x_in: [xp], y_act: [yp]})
 
 # Grap the final values for a and b after training 
 # and print them for the user.

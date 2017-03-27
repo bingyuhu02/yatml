@@ -23,7 +23,7 @@ a = tf.Variable(0, dtype=tf.float32, name="weight")
 b = tf.Variable(np.mean(y), dtype=tf.float32, name="bias")
 
 # y_pred is the predicted y-value from our graph
-y_pred = a * x_in + b
+# TODO: Form the graph!
 
 # y_act is a placeholder for the actual y-value
 # associated with x_in
@@ -33,7 +33,7 @@ y_act = tf.placeholder(tf.float32, [None])
 # squared-difference as before. Recall that we do
 # this instead of absolute value because it's
 # easier to differentiate.
-squared_diff = tf.square(y_pred - y_act)
+# TODO: define the loss function squared_diff
 
 # Create a SGD optimizer (built-in to TensorFlow)
 train_step = tf.train.GradientDescentOptimizer(0.001).minimize(squared_diff)
