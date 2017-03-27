@@ -13,10 +13,12 @@ def unknown_function(a, b):
 
 # Here we define our analytic gradients
 def dfda(a, b):
-    return b
+    # TODO:
+    pass
 
 def dfdb(a, b):
-    return a
+    # TODO:
+    pass
 
 # Define our initial "guess" for a point.
 start_a = -2

@@ -34,8 +34,7 @@ def numeric_gradient_search(func, start_a, start_b, h, step_size):
         out = func(a, b)
 
         # Approximate derivative of f in terms of x and y
-        dfda = (func(a + h, b) - out) / h
-        dfdb = (func(a, b + h) - out) / h
+        # TODO: Estimate dfda and dfdb numerically
 
         # Update our point based on the approximated
         # gradients

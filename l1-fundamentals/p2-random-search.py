@@ -31,8 +31,8 @@ def random_local_search(func, start_a, start_b, tweak_amt):
     
     for i in range(100):
         # Pick a new a and b to try randomly
-        a_try = a + tweak_amt * (random.random() * 2 - 1)
-        b_try = b + tweak_amt * (random.random() * 2 - 1)
+        # TODO: pick a new point (a_try, b_try) to try by 
+        #       randomly adding a small amount to a and b.
 
         # How did we do?
         out = func(a_try, b_try)

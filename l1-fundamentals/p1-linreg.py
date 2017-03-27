@@ -13,15 +13,15 @@ plt.show()
 
 # Fit a degree 1 polynomial (line)
 # to the data.
-a, b = np.polyfit(x,y,1)
+# TODO: use np.polyfit to do a regression
 
 # Let's plot the line y = y-bar
-plt.scatter(x, y)
-plt.plot([0,10],[np.mean(y), np.mean(y)])
-plt.show()
+# plt.scatter(x, y)
+# plt.plot([0,10],[np.mean(y), np.mean(y)])
+# plt.show()
 
 
 # Let's see how the regression did
-plt.scatter(x, y)
-plt.plot([0,10],[0,a*10+b])
-plt.show()
+# plt.scatter(x, y)
+# plt.plot([0,10],[0,a*10+b])
+# plt.show()
